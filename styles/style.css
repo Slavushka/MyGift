@@ -9,3 +9,182 @@ html {
   box-sizing: inherit;
 }
 /* End Global */
+
+/* Base */
+/* nunito-400-regular - cyrillic */
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/nunito-v26-cyrillic-regular.woff2') format('woff2');
+}
+/* nunito-700-bold - cyrillic */
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/nunito-v26-cyrillic-700.woff2') format('woff2');
+}
+
+.body {
+  min-width: 320px;
+  min-height: 100vh;
+  font-size: 16px;
+  line-height: 1.4; /* 140% от размера шрифта */
+  color: #221f1f;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.body_gift {
+  background: #b2e8e8 url(../img/bg_gift.jpg) center/cover;
+}
+
+.body_congratulation {
+  background: #fcc5bd url(../img/bg_congratulation.jpg) center/cover;
+}
+
+.container {
+  max-width: 1240px; /* 1180+30+30  */
+  margin: 0 auto;
+  padding: 0 30px;
+}
+/* End Base */
+
+
+/* Header */
+.header {
+  padding: 40px 0;
+}
+
+.header__logo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* End Header */
+
+
+/* Main */
+/* Section */
+.gift {
+  padding: 20px 0 80px;
+}
+
+.gift__title {
+  /* font-size: 32px; */
+  /* font-weight: 700; */
+  line-height: 1.2;
+}
+
+.gift__description {
+  font-size: 20px;
+  margin: 0 0 50px;
+}
+
+.gift__wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.gift__card {
+  max-width: 580px;
+}
+
+.gift__swiper_card {
+  margin-bottom: 20px;
+}
+
+.gift__card-slide {
+  border: 2px solid #4baa00;
+  border-radius: 20px;
+  box-sizing: border-box; /* У Swiper content-box и рамку не видно */
+  overflow: hidden;
+}
+
+.gift__card-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.gift__card-thumb {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.gift__form {
+  max-width: 480px;
+}
+
+.form__label-text {
+  display: block;
+}
+
+.form__field {
+  width: 100%;
+  padding: 8px 16px;
+  border: 1px solid #dedede;
+  border-radius: 6px;
+  outline: none;
+  font: inherit; /* Наследуем стили шрифта от родителя */
+  background-color: #fbfbfb;
+}
+
+.form__field:hover,
+.form__field:focus-visible,
+.form__field:active {
+  border-color: #999;
+}
+
+.form__label_textarea {
+  grid-column: 1 / -1; /* От 1 до последней */
+}
+
+.form__field_textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.form__button {
+  padding: 8px 24px;
+  border: 1px solid transparent;
+  border-radius: 32px;
+  font-weight: 700;
+  background-color: #4baa00;
+}
+
+.form__button:hover:not(:disabled) {
+  background-color: #58c601;
+}
+
+.form__button:focus-visible {
+  border-color: #58c601;
+}
+
+.form__button:active:not(:disabled) {
+  transform: translate(2px, 2px);
+}
+
+.form__button:disabled {
+  opacity: 0.4;
+}
+/* End Section */
+/* End Main */
+
+/* xxxxxx */
+/* End xxxxxx */
